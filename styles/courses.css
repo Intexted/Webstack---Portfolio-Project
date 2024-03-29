@@ -1,0 +1,34 @@
+.svg-inline--fa {
+  height: 1.5rem;
+}
+.dark-mode .svg-inline--fa {
+  color: #fff;
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1130px;
+  }
+}
+
+.section-item img:hover {
+  border: 5px solid #38b6ff;
+}
+.section-item.active img {
+  border: 5px solid #38b6ff;
+}
+
+.header_bg {
+  background-color: #fff;
+  backdrop-filter: saturate(180%) blur(5px);
+  opacity: 0.95;
+}
+.dark-mode .header_bg {
+  background-color: black;
+}
+
+body:has(.courses) {
+  background-color: #fff;
+}
+body.dark-mode:has(.courses) {
+  background-color: #000;
+}

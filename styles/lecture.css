@@ -1,0 +1,596 @@
+.single-lecture {
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+  /* Sidebar */
+  /* Header Part */
+  /* Date Day */
+  /* Lecture part two */
+  /* comment part */
+  /* Watch part */
+  /* Calender Part */
+  /* Syllabus Main */
+  /* Lr Start */
+  /* Level */
+  /* Main dif */
+  /* LSAT Number */
+  /* Practice Set */
+  /* Description part Start */
+  /* Profile Start */
+  /* Assgn Start */
+  /* Print */
+  /* Tutor start */
+  /* Style the chat widget and hide the chat box initially */
+}
+
+#main_two {
+  padding-top: 46px;
+  padding-bottom: 50px;
+}
+
+.dark-mode .sidebar {
+  background-color: #27282d;
+}
+.sidebar-main {
+  padding-left: 32px;
+  padding-right: 30px;
+}
+.header-container {
+  display: grid;
+  grid-template-columns: 0.11fr 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 18px;
+}
+.single-lecture .header-left {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.single-lecture .header-right {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.single-lecture .day_content {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.single-lecture .date_content {
+  font-family: Poppins;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.single-lecture .date_box {
+  background-color: #ff3b30;
+  display: inline-block;
+  color: white;
+  padding: 32px 37px 31px 40px;
+  border-radius: 50%;
+  text-align: center;
+  max-width: 132px;
+  min-width: 132px;
+}
+.single-lecture .bookmark_part {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.single-lecture .lecture_partone {
+  padding: 8px 20px 4px 20px;
+  border: 1px solid rgb(78 78 82);
+  border-radius: 15px;
+}
+.single-lecture .lecture_head h1 {
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.single-lecture .comment_main button {
+  padding: 10px 15px 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #000;
+  gap: 10px;
+  background-color: transparent;
+  font-weight: bolder;
+  margin-right: 11px;
+}
+.dark-mode .single-lecture .comment_main button {
+  border: 1px solid #d9d9d9;
+}
+
+.single-lecture .comment_main button:hover {
+  background-color: #e0e2e4;
+}
+.single-lecture .watch button {
+  border-radius: 8px;
+  border: 1px;
+  background-color: transparent;
+  border: 1px solid #020202;
+}
+.dark-mode .single-lecture .watch button {
+  border: 1px solid #d9d9d9;
+}
+.single-lecture .watch button:hover {
+  background-color: #e0e2e4;
+}
+.dark-mode .single-lecture .watch button:hover,
+.dark-mode .single-lecture .comment_main button:hover {
+  background-color: #2f2f2f;
+}
+
+.dark-mode .fill-svg {
+  fill: #fff;
+}
+
+.single-lecture .calender_content p {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.single-lecture .calender_content p:first-child {
+  margin-top: 10px;
+}
+.single-lecture .syllabus_part {
+  padding: 30px;
+  background-color: #edf8ff;
+  border-radius: 15px;
+}
+.dark-mode .single-lecture .syllabus_part {
+  background-color: transparent;
+  border: 1px solid #38b6ff;
+}
+.single-lecture .syllabus_part h2 {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.single-lecture .syllabus_part span {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.dark-mode .single-lecture .syllabus_part span {
+  color: #979797;
+}
+.single-lecture .syllabus_part p {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.single-lecture .lr_section button {
+  padding: 2px 19px 2px 19px;
+  border-radius: 8px;
+  gap: 10px;
+  border: 1px solid transparent;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.single-lecture .lr_section button:first-child {
+  background-color: white;
+  color: black;
+  border-color: #d6d6db;
+  margin-right: 6px;
+}
+.single-lecture .lr_section button:nth-child(2) {
+  background-color: white;
+  border-color: #d6d6db;
+  margin-right: 6px;
+  color: black;
+}
+.single-lecture .lr_section button:last-child {
+  background-color: white;
+  border-color: #d6d6db;
+  color: black;
+}
+.single-lecture .btn-check:checked + .btn,
+.single-lecture .btn.active,
+.single-lecture .btn.show,
+.single-lecture .btn:first-child:active,
+.single-lecture :not(.btn-check) + .btn:active {
+  color: white !important;
+  background-color: #494949 !important;
+  border-color: #494949 !important;
+}
+.single-lecture .level_main {
+  display: flex;
+  margin-top: 10px;
+}
+.single-lecture .level_main .level_one.active,
+.single-lecture .level_main .level_two.active,
+.single-lecture .level_main .level_three.active {
+  width: 37px;
+  height: 11px;
+  border-radius: 9px;
+  background-color: #494949;
+  margin-right: 3px;
+}
+.dark-mode .single-lecture .level_main .level_one.active,
+.dark-mode .single-lecture .level_main .level_two.active,
+.dark-mode .single-lecture .level_main .level_three.active {
+  width: 37px;
+  height: 11px;
+  border-radius: 9px;
+  background-color: #d9d9d9;
+  margin-right: 3px;
+}
+.dark-mode .single-lecture .level_main .level_one,
+.dark-mode .single-lecture .level_main .level_two,
+.dark-mode .single-lecture .level_main .level_three {
+  width: 37px;
+  height: 11px;
+  border-radius: 9px;
+  background-color: #494949;
+}
+.single-lecture .level_main .level_one,
+.single-lecture .level_main .level_two,
+.single-lecture .level_main .level_three {
+  width: 37px;
+  height: 11px;
+  border-radius: 9px;
+  background-color: #d9d9d9;
+}
+.single-lecture .main_dif {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.single-lecture .lsat_number span {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.single-lecture .lsat_number h5 {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.single-lecture .practice_set {
+  border-top: 1px solid black;
+  padding-top: 30px;
+  margin-top: 32px;
+  position: relative;
+}
+.single-lecture .practice_head {
+  padding-left: 26px;
+  padding-right: 26px;
+  position: absolute;
+  background-color: #edf8ff;
+  top: -13px;
+  left: 35%;
+  z-index: 99;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.dark-mode .single-lecture .practice_head {
+  background-color: transparent;
+}
+
+.single-lecture .description_part {
+  padding: 30px 30px 20px 30px;
+  background-color: #fffdf4;
+  border-radius: 15px;
+}
+.dark-mode .single-lecture .description_part {
+  background-color: transparent;
+  border: 1px solid rgb(78 78 82);
+}
+.single-lecture .description_part h2 {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.single-lecture .profile_part {
+  padding: 28px 23px 20px 18px;
+  background-color: white;
+  border-radius: 15px;
+  border: 1px solid #d6d6db;
+}
+.dark-mode .single-lecture .profile_part {
+  background-color: transparent;
+  border: 1px solid rgb(78 78 82);
+}
+
+.single-lecture .profile_content {
+  padding-top: 18px;
+}
+.single-lecture .profile_content h5 {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.single-lecture .profile_content span {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #38b6ff;
+}
+.single-lecture .profile_para {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 20px;
+}
+.dark-mode .single-lecture .profile_para {
+  color: #979797;
+}
+.single-lecture .profile_btn {
+  display: flex;
+  gap: 5px;
+}
+.single-lecture .profile_btn a {
+  color: #fff;
+}
+.dark-mode .single-lecture .profile_btn a {
+  color: #000;
+}
+.single-lecture .profile_btn .btn:first-child {
+  padding: 10px 20px 9px 20px;
+  border-radius: 10px;
+  gap: 10px;
+  background-color: #020202;
+  color: white;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-right: 20px;
+  border: 1px solid #fff;
+}
+.dark-mode .single-lecture .profile_btn .btn:first-child {
+  background-color: white;
+  color: #020202;
+}
+.single-lecture .profile_btn .btn:last-child {
+  padding: 10px 30px 9px 30px;
+  border-radius: 10px;
+  gap: 10px;
+  background-color: white;
+  color: black;
+  border: 1px solid #979797;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.dark-mode .single-lecture .profile_btn .btn:last-child {
+  background-color: #020202;
+  color: white;
+}
+.single-lecture .assgn_part {
+  padding: 18px 30px 12px 30px;
+  background-color: white;
+  border-radius: 15px;
+  border: 1px solid #d6d6db;
+}
+.dark-mode .single-lecture .assgn_part {
+  padding: 18px 30px 12px 30px;
+  background-color: transparent;
+  border-radius: 15px;
+  border: 1px solid rgb(78 78 82);
+}
+.single-lecture .assgn_part h4 {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.single-lecture .pdf_print {
+  text-decoration: underline;
+  color: black;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 16px;
+}
+.dark-mode .single-lecture .pdf_print,
+.dark-mode .single-lecture .link_print,
+.dark-mode .single-lecture .tutor_content p,
+.dark-mode .single-lecture .calender_content p,
+.dark-mode .single-lecture .description_part p {
+  color: #979797;
+}
+
+.single-lecture .pdf_print:hover {
+  text-decoration: underline;
+}
+.single-lecture .link_print {
+  text-decoration: underline;
+  color: black;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 16px;
+}
+.single-lecture .link_print:hover {
+  text-decoration: underline;
+}
+.single-lecture .tutor_part {
+  padding: 18px 30px 18px 30px;
+  background-color: transparent;
+  border-radius: 15px;
+  border: 1px solid #d6d6db;
+}
+.dark-mode .single-lecture .tutor_part {
+  border: 1px solid rgb(78 78 82);
+}
+.single-lecture .tutor_part h4 {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.single-lecture .tutor_content {
+  padding: 0px 20px 0px 20px;
+  border-left: 3px solid #38b6ff;
+  margin-top: 24px;
+}
+.single-lecture .tutor_content p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.single-lecture .chat-widget {
+  position: fixed;
+  bottom: 12px;
+  right: 20px;
+  z-index: 1000;
+}
+.single-lecture .chat-box {
+  display: none;
+  max-width: 500px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  border-radius: 15px;
+}
+.single-lecture .chat-icon {
+  position: relative;
+}
+.single-lecture .chat-icon span {
+  position: absolute;
+  top: -24px;
+  left: -34px;
+}
+.single-lecture .chat-messages {
+  padding: 2px 20px 14px 8px;
+}
+.single-lecture .chathead {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  color: dimgray;
+}
+.single-lecture .chat_date {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 8px;
+}
+.single-lecture .chat_para {
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.single-lecture .msg_main {
+  line-height: 5px;
+}
+.single-lecture .reduce_p {
+  padding: 0 !important;
+}
+.single-lecture .chat_btn {
+  padding: 10px;
+  background-color: white;
+  border: 1px solid #989898;
+  border-radius: 6px;
+}
+.single-lecture .chat-input {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+}
+.single-lecture .chatinput_main {
+  padding: 8px 26px 8px 26px;
+  border: 1px solid #989898;
+  border-radius: 15px;
+  max-width: 400px;
+  width: 84%;
+}
+.single-lecture .form-control {
+  border: 0;
+  display: inline-block;
+  width: 70%;
+}
+.single-lecture .form-control:focus-visible {
+  box-shadow: none;
+}
+.single-lecture .form-control::placeholder {
+  font-family: Poppins;
+  font-size: 16px;
+}
+.single-lecture #send-button {
+  background-color: #3394c6;
+  margin-left: 14px;
+  border: 1px solid #3394c6;
+  border-radius: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.single-lecture #close-chat {
+  background-color: transparent;
+  border: 0;
+  font-size: 16px;
+  margin-left: auto;
+}
+.single-lecture a {
+  text-decoration: none;
+}

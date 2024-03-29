@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+h2 {
+  color: var(--Style, #020202);
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+.indiv {
+  color: #38b6ff;
+  font-weight: bolder;
+  position: relative;
+  padding-left: 10px;
+}
+.title {
+  width: 661px;
+}
+svg {
+  position: absolute;
+  right: 35px;
+  top: 38px;
+}
+.iti {
+  position: relative;
+  display: block;
+}
+
+.myForm {
+  padding-top: 54px;
+  padding-bottom: 54px;
+  padding-left: 256px;
+  padding-right: 256px;
+}
+label {
+  color: var(--494949, #494949);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 8px;
+}
+input {
+  border-radius: 10px;
+  border: 1px solid var(--979797, #979797);
+  background: #fff;
+}
+input::placeholder {
+  font-family: Poppins, sans-serif;
+}
+select {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+
+  border-radius: 10px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.custom-select {
+  appearance: none; /* This property hides the default select arrow */
+  background-image: url("../public/Vector.svg"); /* Set your custom icon image path here */
+  background-position: right 12px center;
+  background-repeat: no-repeat;
+  padding-right: 20px !important; /* Add some padding to make room for the icon */
+}
+.custom-select:focus {
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  border-color: #38b6ff !important;
+}
+.res_margin {
+  margin-top: 32px !important;
+}
+
+.btn {
+  border-radius: 10px;
+  font-family: Poppins, sans-serif;
+}
+button#yesButton {
+  border: 1px solid darkgray;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: black;
+}
+button#noButton {
+  border: 1px solid darkgray;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: black;
+}
+button#yesButton.btn.active {
+  border: 2px solid #38b6ff;
+  font-weight: bold;
+}
+
+button#noButton.btn.active {
+  border: 2px solid #38b6ff;
+  font-weight: bold;
+}
+
+.custom-dropdown .dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1.5rem;
+  clear: both;
+  font-weight: normal;
+  color: #212529;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+
+.custom-dropdown .dropdown-item:focus,
+.custom-dropdown .dropdown-item:hover {
+  color: #1e2125;
+  text-decoration: none;
+  background-color: #f8f9fa;
+}
+
+.custom-dropdown .dropdown-divider {
+  margin: 0.5rem 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* ROW FOUR YES NO CSS  */
+button#yesBtnNot {
+  border: 1px solid darkgray;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: black;
+}
+button#noBtnNot {
+  border: 1px solid darkgray;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: black;
+}
+button#yesBtnNot.btn.active {
+  border: 2px solid #38b6ff;
+  font-weight: bold;
+}
+
+button#noBtnNot.btn.active {
+  border: 2px solid red;
+  font-weight: bold;
+}
+
+.btn-svg svg {
+  display: none;
+}
+
+.btn-svg.active svg {
+  display: inline;
+}
+
+/* ROW FOUR YES NO CSS  */
+
+/* ROW Five CSS  */
+button#allSection {
+  border: 1px solid darkgray;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: black;
+}
+button#logicReason {
+  border: 1px solid darkgray;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: black;
+}
+button#readComp {
+  border: 1px solid darkgray;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: black;
+}
+button#logicGames {
+  border: 1px solid darkgray;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: black;
+}
+
+button#allSection.btn.active {
+  border: 2px solid #38b6ff;
+  font-weight: bold;
+}
+
+button#logicReason.btn.active {
+  border: 2px solid #38b6ff;
+  font-weight: bold;
+}
+button#readComp.btn.active {
+  border: 2px solid #38b6ff;
+  font-weight: bold;
+}
+
+button#logicGames.btn.active {
+  border: 2px solid #38b6ff;
+  font-weight: bold;
+}
+/* ROW Five CSS  */
+
+.skipBtn {
+  display: flex;
+  height: 42px;
+  padding: 10px 50px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  gap: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--979797, #979797);
+}
+.submitBtn {
+  display: flex;
+  height: 42px;
+  color: #ffffff;
+  padding: 10px 80px;
+  justify-content: center;
+  font-weight: 600;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: var(--Style, #38b6ff);
+}
+
+/* Mobile view query  */
+@media (max-width: 768px) {
+  .myForm {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 800px) {
+  .myForm {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 128px;
+    padding-right: 128px;
+  }
+}
+@media (min-width: 820px) and (max-width: 1180px) {
+  .myForm {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 128px;
+    padding-right: 128px;
+  }
+  svg {
+    position: absolute;
+    right: 20px;
+    top: 35px;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 896px) {
+  .myForm {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .title {
+    width: auto;
+  }
+  svg {
+    position: absolute;
+    right: 20px;
+    top: 35px;
+  }
+  .skipBtn {
+    display: flex;
+    height: 42px;
+    padding: 10px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--979797, #979797);
+  }
+  .submitBtn {
+    display: flex;
+    height: 42px;
+    color: #ffffff;
+    padding: 10px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background: var(--Style, #38b6ff);
+  }
+  .btn {
+    margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .res_margin {
+    margin-top: 2px;
+  }
+  .res_margin_two {
+    margin-bottom: 0px !important;
+  }
+  h2 {
+    font-size: 18px;
+  }
+
+  svg {
+    position: absolute;
+    right: 20px;
+    top: 22px;
+    height: 12px;
+    width: 75px !important;
+  }
+}

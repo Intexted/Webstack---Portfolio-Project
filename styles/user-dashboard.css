@@ -1,0 +1,343 @@
+@import url("https://fonts.cdnfonts.com/css/satoshi");
+
+.sidebar {
+  position: sticky;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #f2faff;
+  height: 100vh;
+  width: 56px;
+}
+
+.dark-mode .sidebar {
+  background-color: #27282d;
+}
+.sidebar-main {
+  padding-left: 32px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+/* body {
+  font-family: ;
+} */
+* {
+  font-family: var(--bs-font-sans-serif);
+}
+.logo_part {
+  font-size: 54px;
+  font-weight: 700;
+  font-family: Poppins;
+  line-height: 40px;
+}
+
+.logo_part span {
+  font-weight: 600;
+  color: rgb(56, 182, 255);
+}
+
+.header-section button svg {
+  height: 35px;
+  width: 35px;
+}
+.header-section button {
+  padding: 7px 20px;
+  border-radius: 12px;
+  border: 2px solid #d6d6db;
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+
+.header-section button:hover {
+  background-color: #e0e2e4;
+}
+
+.header-section button span {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  white-space: nowrap;
+  letter-spacing: 0em;
+}
+
+.yr-section button {
+  padding: 2px 15px;
+  border-radius: 12px;
+  border: 2px solid #d6d6db;
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  /* width: 160px; */
+  justify-content: center;
+}
+
+.yr-section button:hover {
+  background-color: #e0e2e4;
+}
+
+.yr-section button span {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.lecture_content {
+  position: relative;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  z-index: 9;
+}
+
+.lecture_content .line {
+  border-top: 1px solid rgba(73, 73, 73, 1);
+  flex: 1;
+}
+
+.date_head span:first-child {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.notification {
+  /* height: 241px; */
+  width: 350px;
+  padding: 20px 15px;
+  border-radius: 20px;
+  border: 1px solid rgba(217, 217, 217, 1);
+}
+
+.notification h3 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.offer {
+  width: 380px;
+  height: 345px;
+  top: 1134px;
+  left: 887px;
+  padding: 30px 20px;
+  border-radius: 20px;
+  gap: 14px;
+  border: 1px solid rgba(217, 217, 217, 1);
+}
+.offer h3 {
+  font-size: 28px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.offer p,
+.offer ul {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+:root {
+  --mov: 0;
+}
+
+.pose {
+  position: relative;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.pose .my-number {
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0%);
+  position: absolute;
+  font-size: 45px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.my-chart .st0 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #ddedff;
+}
+
+.my-chart .st1 {
+  fill: #979797;
+}
+
+.my-chart .st2 {
+  fill: none;
+  stroke: #020202;
+  stroke-linecap: square;
+}
+
+.my-chart .st3 {
+  fill: #020202;
+}
+
+.my-chart .st4 {
+  animation: move 0.7s ease-out;
+  fill: none;
+  stroke: #1877f2;
+  stroke-width: 21;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 310;
+  stroke-dashoffset: calc(310 - (var(--mov) * 310) / 100);
+  transition: all 0.5s;
+}
+
+@keyframes move {
+  0% {
+    stroke-dashoffset: 310;
+  }
+  100% {
+    /* stroke-dashoffset: 310; */
+  }
+}
+
+.ls-section h3 {
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  padding-bottom: 3px;
+  white-space: nowrap;
+}
+
+.ls-section h3.active {
+  border-bottom: 2px solid #38b6ff;
+}
+
+:root {
+  --pos: 10;
+  --pos1: 10;
+}
+
+.circle .cls-1,
+.circle .cls-3,
+.circle .cls-4 {
+  fill: none;
+}
+
+.circle .cls-2 {
+  fill: #ddedff;
+  fill-rule: evenodd;
+}
+
+.circle .cls-3,
+.circle .cls-4 {
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  stroke-width: 25px;
+  stroke-dasharray: 590;
+  stroke-dashoffset: calc(590 - (var(--pos)) * 590 / 100);
+  transition: all 1s;
+}
+
+.circle .cls-4 {
+  stroke: red;
+  stroke-dashoffset: 90;
+  stroke-dasharray: 590;
+  stroke-dashoffset: calc(590 - (var(--pos1)) * 590 / 100);
+  transition: all 1s;
+}
+
+.circle .cls-5 {
+  fill: red;
+  transition: all 1s;
+  stroke: white;
+  stroke-width: 1px;
+}
+
+svg.active .cls-4 {
+  stroke: #1877f2;
+  transform: translateZ(100);
+}
+
+.circle .cls-3 {
+  stroke: #1877f2;
+}
+
+.circle .cls-3.cls-3-1 {
+  display: block;
+}
+
+.circle svg.active .cls-5 {
+  fill: #21d16c;
+}
+
+.circle svg.active .cls-3 {
+  stroke: #21d16c;
+}
+
+.circle svg.active .cls-3.cls-3-1 {
+  transform: translateZ(1000);
+  display: none;
+}
+
+.circle .cls-6 {
+  isolation: isolate;
+  font-size: 20px;
+  fill: #fff;
+}
+
+.circle .cls-6,
+.circle .cls-7,
+.circle .cls-8 {
+  font-family: Arial-BoldMT, Arial;
+  font-weight: 700;
+}
+
+.circle .cls-7 {
+  font-size: 80px;
+}
+
+.circle .cls-8 {
+  font-size: 15px;
+}
+
+.circle .mov {
+  transform-origin: 50%;
+  transform: rotate(calc(var(--pos) * 3.6deg));
+  transition: all 1s;
+  /* animation: 2s alternate infinite anim; */
+}
+
+@keyframes anim {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.bookmark_userdb div:first-child {
+  color: #000;
+  display: none;
+}
+.bookmark_userdb div:last-child {
+  color: #000;
+  display: block;
+}
+.bookmark_userdb.active div:first-child {
+  display: block;
+  color: #fff;
+}
+.bookmark_userdb.active div:last-child {
+  display: none;
+}
+.bookmark_userdb.active {
+  background-color: #020202;
+}

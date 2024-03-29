@@ -1,0 +1,201 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  /* background-image: url("../public/backgroundimage.png"); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.logo {
+  width: 140px;
+  height: 140px;
+  z-index: 2;
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 2%;
+}
+.text-mute {
+  color: #a6a3a3;
+}
+.card {
+  border: white;
+  border-radius: 35px;
+  width: 780px;
+}
+.card-title {
+  color: #020202;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  font-size: 35px;
+}
+.dot {
+  color: #38b6ff;
+  font-size: 8px;
+}
+.qsMark {
+  color: #38b6ff;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.mybtnGroup {
+  border-radius: 12px;
+  border: 2px solid #1d90f5;
+  padding: 3px;
+}
+.mybutton {
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.mybutton:hover {
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  background: linear-gradient(
+    272.43deg,
+    rgba(56, 182, 255, 0.74) -3.38%,
+    rgba(150, 92, 226, 0.94) 109.69%,
+    rgba(160, 82, 222, 0.68) 109.69%
+  );
+  border-radius: 12px;
+}
+.mybutton.active {
+  background: linear-gradient(
+    272.43deg,
+    rgba(56, 182, 255, 0.74) -3.38%,
+    rgba(150, 92, 226, 0.94) 109.69%,
+    rgba(160, 82, 222, 0.68) 109.69%
+  );
+  border-radius: 12px;
+}
+.icon-pass-input {
+  padding-right: 30px;
+  background-image: url("../public/eye.png");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px) center;
+  background-size: 15px 15px;
+}
+.form-control {
+  border-radius: 18px;
+  background: #eaeef2;
+  font-weight: bold;
+}
+.btnDesign {
+  background: linear-gradient(
+    272.43deg,
+    rgba(56, 182, 255, 0.74) -3.38%,
+    rgba(150, 92, 226, 0.94) 109.69%,
+    rgba(160, 82, 222, 0.68) 109.69%
+  );
+  width: 260px;
+  top: 858px;
+  left: 574px;
+  border-radius: 40px;
+  font-weight: bold;
+}
+.form-check-input:checked {
+  background-color: #38b6ff;
+  border-color: #38b6ff;
+}
+.remMe {
+  color: #a6a3a3;
+  /* font-size: 15px; */
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.forgetPass {
+  color: #38b6ff !important;
+  /* font-size: 20px; */
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.cancelBtn {
+  color: linear-gradient(
+    272.43deg,
+    rgba(56, 182, 255, 0.74) -3.38%,
+    rgba(150, 92, 226, 0.94) 109.69%,
+    rgba(160, 82, 222, 0.68) 109.69%
+  );
+}
+input {
+  border-color: transparent;
+  padding-left: 20px;
+}
+.form-check-input {
+  width: 16px;
+  height: 20px;
+}
+.forget_title {
+  font-size: 30px;
+}
+
+/* Margin/Padding Css */
+.login_group {
+  margin-top: 40px;
+}
+#signupForm {
+  margin-top: 20px;
+}
+#loginForm {
+  margin-top: 20px;
+}
+.needs-validation {
+  margin-top: 50px;
+}
+.btnDesign {
+  margin-top: 36px;
+  padding: 10px 40px;
+}
+.forget_title {
+  margin-top: 45px !important;
+}
+.new_creden {
+  margin-top: 46px;
+}
+.pass_update {
+  margin-top: 20px;
+}
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+  body {
+    overflow: auto;
+    /* Your other styles for mobile landscape can go here */
+  }
+}
+
+.icon-input {
+  padding-right: 30px;
+  background-image: url("../public/Vector.png");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px) center;
+  background-size: 15px 15px;
+}
+.icon-email-input {
+  padding-right: 30px;
+  background-image: url("../public/email.png");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 15px) center;
+  background-size: 15px 15px;
+}
+
+.form-floating > .form-control,
+.form-floating > .form-select {
+  height: auto;
+  line-height: 1.25;
+}
+
+.form-floating > label {
+  color: #a6a3a3;
+}
