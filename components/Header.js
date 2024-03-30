@@ -8,8 +8,11 @@ import FilterModal from "./FilterModal";
 import { useSearchParams } from "next/navigation";
 import { deleteCookie, getCookie, setCookie } from "cookies-next";
 import Logout from "./Logout";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChartBar } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
-function Header({ name }) {
+function Header({ name, role }) {
   const [filterOpen, setFilterOpen] = useState(false);
   const [calendrierOpen, setCalendrierOpen] = useState(false);
   const searchParams = useSearchParams();
@@ -65,6 +68,16 @@ function Header({ name }) {
                         </label>
                       </div>
                     </div>
+                    {role === "admin" && (
+                      <Link href="/dashboard" style={{ color: "inherit" }}>
+                        <h5
+                          title="Dashboard"
+                          style={{ marginRight: 5, cursor: "pointer" }}
+                        >
+                          <FontAwesomeIcon icon={faChartBar} width={30} />
+                        </h5>
+                      </Link>
+                    )}
                     <Logout />
                   </div>
                 </div>

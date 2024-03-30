@@ -160,9 +160,6 @@ const LectureCard = ({
               {!UserDashboard && (
                 <>
                   <button>
-                    <MessageIcon />
-                  </button>
-                  <button>
                     <Link href={`/lectures/${id}`}>
                       <InformationIcon />
                     </Link>

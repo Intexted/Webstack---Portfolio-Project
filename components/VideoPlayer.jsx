@@ -9,10 +9,10 @@ function VideoPlayer() {
       style={{ display: "flex", justifyContent: "center", marginTop: "30px" }}
     >
       <ReactPlayer
-        url="/my-video.mp4"
+        url="https://www.youtube.com/watch?v=LXb3EKWsInQ"
         controls={true}
         width={1105}
-        height={500}
+        height={410}
       />
     </div>
   );

@@ -11,6 +11,7 @@ function Logout() {
   return (
     <div
       className="d-flex"
+      title="Logout"
       onClick={() => {
         deleteCookie("rememberMe");
         router.refresh();
@@ -20,7 +21,7 @@ function Logout() {
     >
       {" "}
       <h5>
-        <FontAwesomeIcon icon={faSignOut} color="#000" width={20} />
+        <FontAwesomeIcon icon={faSignOut} width={20} />
       </h5>
     </div>
   );

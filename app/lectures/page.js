@@ -11,9 +11,10 @@ async function Lectures() {
   const lectures = await actions.getData();
   user.videos = null;
   const name = session?.user?.name;
+  const role = session?.user?.role;
   return (
     <div>
-      <Header name={name} />
+      <Header name={name} role={role} />
       <LectureList {...{ user, lectures }} />
     </div>
   );
