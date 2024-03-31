@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 
 const useFilter = ({ List, user }) => {
   const pathname = usePathname();
-  console.log();
+
   const searchParams = useSearchParams();
   const [FilterList, setFilterList] = useState();
   const [firstUpdate, setfirstUpdate] = useState(null);

@@ -109,4 +109,3 @@ function getMonthsAndYearsArray() {
 }
 
 const monthsAndYearsArray = getMonthsAndYearsArray();
-console.log(monthsAndYearsArray);

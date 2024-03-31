@@ -42,7 +42,6 @@ const LectureForm = ({ lecture }) => {
   const router = useRouter();
 
   const handleChange = (item) => {
-    console.log(watch("section"));
     setValue(
       "section",
       watch("section")?.includes(item)
@@ -128,22 +127,6 @@ const LectureForm = ({ lecture }) => {
               <div className="invalid-feedback">
                 {errors?.description.message}
               </div>
-            )}
-          </div>
-          <div className="form-group mt-1">
-            <label htmlFor="tutorDir">Tutorʼs direction</label>
-            <textarea
-              id="tutorDir"
-              name="tutorDir"
-              placeholder="Add Tutorʼs direction"
-              className={`form-control ${errors?.tutorDir ? "is-invalid" : ""}`}
-              rows="4"
-              {...register("tutorDir", {
-                required: "Tutorʼs direction is required",
-              })}
-            ></textarea>
-            {errors?.tutorDir && (
-              <div className="invalid-feedback">{errors?.tutorDir.message}</div>
             )}
           </div>
 
@@ -241,61 +224,6 @@ const LectureForm = ({ lecture }) => {
             {errors?.level && (
               <div className="invalid-feedback">{errors?.level.message}</div>
             )}
-          </div>
-          <div className="d-flex gap-2 align-items-center mt-2">
-            <div className="form-group mt-1">
-              <label htmlFor="lsatNumber">LSAT Number</label>
-              <input
-                type="number"
-                className={`form-control ${
-                  errors?.lsatNumber ? "is-invalid" : ""
-                }`}
-                id="lsatNumber"
-                name="lsatNumber"
-                {...register("lsatNumber", {
-                  required: "lsat Number is required",
-                })}
-              />
-              {errors?.lsatNumber && (
-                <div className="invalid-feedback">
-                  {errors?.lsatNumber.message}
-                </div>
-              )}
-            </div>
-            <div className="form-group mt-1">
-              <label htmlFor="sectionNumber">Section Number</label>
-              <input
-                type="number"
-                className={`form-control ${
-                  errors?.sectionNumber ? "is-invalid" : ""
-                }`}
-                id="sectionNumber"
-                name="sectionNumber"
-                {...register("sectionNumber", {
-                  required: "section Number is required",
-                })}
-              />
-              {errors?.sectionNumber && (
-                <div className="invalid-feedback">
-                  {errors?.sectionNumber.message}
-                </div>
-              )}
-            </div>
-            <div className="form-group mt-1">
-              <label htmlFor="QperG">Questions/Games</label>
-              <input
-                type="text"
-                className={`form-control ${errors?.QperG ? "is-invalid" : ""}`}
-                id="QperG"
-                name="QperG"
-                {...register("QperG", {
-                  required: "section Number is required",
-                })}
-              />
-              {errors?.QperG && (
-                <div className="invalid-feedback">{errors?.QperG.message}</div>
-              )}
-            </div>
           </div>
 
           <div className="d-flex gap-2 align-items-center mt-2">
@@ -447,12 +375,9 @@ const LectureForm = ({ lecture }) => {
                           options: {
                             temporary: true,
                           },
-                          onProgressChange: (progress) => {
-                            // you can use this to show a progress bar
-                            console.log(progress);
-                          },
+                          onProgressChange: (progress) => {},
                         });
-                        console.log(res);
+
                         setUrl(res.url);
                         setUploadLoading(false);
                       }

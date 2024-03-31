@@ -16,7 +16,6 @@ function CalenderModal({ setCalendrierOpen }) {
         setCalendrierOpen(false);
 
         const formattedDate = moment(value).format("MM-DD-YYYY");
-        console.log(formattedDate);
         const targetElement = document.getElementById(formattedDate);
 
         if (targetElement) {

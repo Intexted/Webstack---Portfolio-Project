@@ -15,8 +15,6 @@ const VideoForm = ({ video, sections }) => {
   const [file, setFile] = useState();
   const { edgestore } = useEdgeStore();
 
-  console.log();
-
   const [homeworks, setHomeworks] = useState(
     defaultVals
       ? defaultVals.addHomeworks
